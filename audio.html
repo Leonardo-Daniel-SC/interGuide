@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcrição</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            Interguide
+        </div>
+        <div class="menu">
+            <a href="dashboard.html">Home</a>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <section class="hero">
+        <h1>Transcrição de Áudio</h1>
+        <p>Grave uma aula e transforme o áudio em texto.</p>
+
+        <!-- BOTÕES -->
+        <div class="audio-buttons">
+            <button class="btn" id="iniciarBtn">Iniciar</button>
+            <button class="btn" id="pararBtn">Parar</button>
+        </div>
+
+        <!-- TEXTO -->
+        <textarea
+            id="transcricao"
+            placeholder="A transcrição aparecerá aqui...">
+        </textarea>
+
+        <!-- EXPORTAÇÃO -->
+        <div class="audio-buttons">
+            <button class="btn" id="pdfBtn">Exportar PDF</button>
+            <button class="btn" id="txtBtn">Exportar TX</button>
+        </div>
+
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/audio.js"></script>
+
+</body>
+
+</html>

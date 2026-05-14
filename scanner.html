@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+     <nav>
+        <div class="logo">InterGuide</div>
+        <div class="menu">
+            <a href="dashboard.html">Home</a>
+            <a href="login.html" >Login</a>
+        </div>
+     </nav>
+
+     <!-- CONTEÚDO -->
+     <section class="hero">
+        <h1>Scanner de Texto</h1>
+        <p>Faça upload de uma imagem para extrair o texto.</p>
+
+        <!-- INPUT -->
+         <input type="file" id="imagemInput" accept="image/*">
+
+        <!-- PREVIEW -->
+        <img id="preview" width="400" alt="Previw da imagem" style="display: none;">
+
+        <!-- BOTÃO -->
+        <button class="btn" id="extrairBtn">extrair texto</button>
+
+        <!-- RESULTADO -->
+         <div class="card" id="resultado">
+            <h2>Texto extraído:</h2>
+            <p id="textoExtraido">Nenhum texto encontrado.</p>
+         </div>
+     </section>
+     
+      <!-- javascript -->
+      <script src="./js/scanner.js"></script>
+    
+</body>
+</html>
