@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -13,17 +17,17 @@
         <div class="logo">InterGuide</div>
         <div class="menu">
             <a href="index.html">Sobre o InterGuide</a>
-            <a href="login.html">Login</a>
         </div>
      </nav>
 
+    <div class="inicio">
      <!-- TÍTULO -->
-      <section class="hero">
+      <section class="dashboard-hero">
 
         <h1>Painel Principal</h1>
         <p>Escolha uma funcionalidade do InterGuide</p>
       </section>
-
+    </div>
       <!-- CARDS -->
       <section class="cards">
 
@@ -31,30 +35,46 @@
         <div class="card">
             <h2>Guia Interno</h2>
             <p>Aprenda como usar cada função da câmera.</p>
-            <button class="btn guiaBtn">Abrir</button>    
+            <div class="btn-area">
+                <button class="btn guiaBtn">Abrir</button>
+            </div>
         </div>
 
         <!-- CARD 2 -->
         <div class="card">
             <h2>Scanner de Texto</h2>
             <p>Extraia textos automaticamente de uma imagem.</p>
-            <button class="btn scannerBtn">Abrir</button>
+            <div class="btn-area">
+                <button class="btn scannerBtn">Abrir</button>
+            </div>
         </div>
 
         <!-- CARD 3 -->
         <div class="card">
             <h2>Transcrição de Áudio</h2>
             <p>Transforme um simples áudio em conteúdo de aula editável.</p>
-            <button class="btn audioBtn">Abrir</button>
+            <div class="btn-area">
+                <button class="btn audioBtn">Abrir</button>
+            </div>
         </div>
 
         <!-- CARD 4 -->
         <div class="card">
             <h2>Personalização de interface</h2>
             <p>Personalize sua interface do jeito que quiser.</p>
-            <button class="btn temaBtn">Abrir</button>
+            <div class="btn-area">
+                <button class="btn temaBtn">Abrir</button>
+            </div>
+
         </div>
       </section>
+
+    <footer>
+        <p>
+           &copy;  2026 InterGuide - Projeto Acadêmico. Todos os direitos reservados
+            
+        </p>
+    </footer>
 
       <!-- JAVASCRIPT -->
        <script src="./js/dashboard.js"></script>
