@@ -5,25 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transcrição</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/audio.css">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
     <nav>
-        <div class="logo">
-            Interguide
-        </div>
+        <div class="logo">InterGuide</div>
         <div class="menu">
             <a href="dashboard.html">Home</a>
+            <a href="login.html" >Login</a>
         </div>
-    </nav>
+     </nav>
 
-    <!-- CONTEÚDO -->
-    <section class="hero">
+     <!-- CONTEÚDO -->
+    <div class="inicio">
+     <section class="hero">
         <h1>Transcrição de Áudio</h1>
         <p>Grave uma aula e transforme o áudio em texto.</p>
+
+        
+
+        <!-- PREVIEW -->
+        <img id="preview" width="400" alt="Previw da imagem" style="display: none;">
 
         <!-- BOTÕES -->
         <div class="audio-buttons">
@@ -31,18 +36,22 @@
             <button class="btn" id="pararBtn">Parar</button>
         </div>
 
-        <!-- TEXTO -->
-        <textarea
-            id="transcricao"
-            placeholder="A transcrição aparecerá aqui...">
-        </textarea>
+        <!-- RESULTADO -->
+        <div class="card" id="resultado">
+            <h2>A transcrição aparecerá aqui...</h2>
+         </div>
 
-        <!-- EXPORTAÇÃO -->
-        <div class="audio-buttons">
+         <!-- EXPORTAÇÃO -->
+        <div class="export-buttons">
             <button class="btn" id="pdfBtn">Exportar PDF</button>
-            <button class="btn" id="txtBtn">Exportar TX</button>
+            <button class="btn" id="txtBtn">Exportar TXT</button>
         </div>
-    </section>
+
+
+     </section>
+        <div>
+            <img src="./img/aula.png" alt="celular com video da aula" id="aula">
+        </div>
 
     <footer>
         <p>

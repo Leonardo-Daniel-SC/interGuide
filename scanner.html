@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scanner</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/scanner.css">
 </head>
 <body>
 
@@ -18,26 +18,31 @@
      </nav>
 
      <!-- CONTEÚDO -->
+    <div class="inicio">
      <section class="hero">
         <h1>Scanner de Texto</h1>
-        <p>Faça upload de uma imagem para extrair o texto.</p>
+        <p>Nosso scanner, OCR, faz a análise de uma imagem e extrai seu texto.</p>
 
-        <!-- INPUT -->
-         <input type="file" id="imagemInput" accept="image/*">
+        
 
         <!-- PREVIEW -->
         <img id="preview" width="400" alt="Previw da imagem" style="display: none;">
 
         <!-- BOTÃO -->
-        <button class="btn" id="extrairBtn">extrair texto</button>
+        <button class="btn" id="extrairBtn">Extrair texto</button>
 
         <!-- RESULTADO -->
-         <div class="card" id="resultado">
+        <div class="card" id="resultado">
             <h2>Texto extraído:</h2>
             <p id="textoExtraido">Nenhum texto encontrado.</p>
          </div>
-     </section>
 
+     </section>
+        <div>
+            <img src="./img/foto_aula.png" alt="celular com foto de lousa" id="lousa">
+        </div>
+
+        
     <footer>
         <p>
            &copy;  2026 InterGuide - Projeto Acadêmico. Todos os direitos reservados

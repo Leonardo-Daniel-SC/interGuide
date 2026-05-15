@@ -173,13 +173,6 @@ footer {
 
 }
 
-/* EFEITO CARD */
-.card:hover{
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    background-color: #ccb9ff;
-    color: #383838;
-}
 
 /* TITULO CARD */
 .card h2{
@@ -273,35 +266,33 @@ input:focus{
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* RESULTADO */
 #resultado{
-    margin-top: 30px;
-    max-width: 600px;
+    position: absolute;
+    bottom: 180px;
+    right: 180px
+
 }
 
-/* TEXTAREA */
-textarea{
-    width: 80%;
-    max-width: 700px;
-    height: 250px;
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #ccc;
-    resize: none;
-    font-size: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* BOTÕES ÁUDIO */
 .audio-buttons{
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 450px;
+    right: 358px;
 }
 
-#lousa{
-    max-width: 600px;
+.export-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 100px;
+    right: 248px;
+}
+
+
+
+#aula{
+    max-width: 500px;
 }

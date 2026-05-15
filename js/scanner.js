@@ -6,26 +6,24 @@ document.addEventListener('DOMContentLoaded', function(){
     const extrairBtn = document.getElementById('extrairBtn');
     const textoExtraido = document.getElementById('textoExtraido');
 
-    // PREVIW DA IMAGEM
-    imagemImput.addEventListener('change', function(){
-        const arquivo = imagemInput.files[0];
-
-        if(arquivo){
-            const leitor = new FileReader();
-            leitor.onload = function(event){
-                preview.src = event.target.result;
-                preview.style.display = 'block';
-            };
-            leitor.readAsDataURL(arquivo);
-        }
-    });
 
     // EXTRAIR TEXTO
     extrairBtn.addEventListener('click', function(){
-        if(preview.src === ""){
-            alert('Escolha uma imagem primeiro!');
-            return;
-        }
-        textoExtraido.innerHTML = 'Texto estraído da imagem.';
+        textoExtraido.innerHTML = `onde está a prova?
+no drive 'd:' da máquina. arquivo: 
+"checkpoint01.....pdf
+como fazer a prova?
+desenvolva o código em um arquivo.py
+como enviar a prova p/ nac?
+antes
+-comprima o arquivo.py em um
+arquivo.zip
+-entre na nac: link: nac.fiap.com.br
+insira o login e senha que você usa
+para logar na máquina
+-procure o arq.zip e o anexe
+-envie
+-confirme no projetor se o arq. foi enviado
+        `;
     });
 });
