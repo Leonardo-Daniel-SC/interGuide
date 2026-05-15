@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     /* GUIA */
     const guiaBtn = document.querySelector(".guiaBtn");
     guiaBtn.addEventListener("click", function(){
-        alert("Abrindo Guia Interno!");
+       window.location.href = "guia.html";
     });
 
     /* SCANNER */
